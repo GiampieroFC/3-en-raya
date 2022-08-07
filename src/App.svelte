@@ -59,19 +59,19 @@
 
 <div class="game">
   <div>
-    <Box {mark} on:newMark={changes} on:valor={(event) => {a = event.explicitOriginalTarget.textContent}}/>
-    <Box {mark} on:newMark={changes} on:valor={(event) => {b = event.explicitOriginalTarget.textContent}}/>
-    <Box {mark} on:newMark={changes} on:valor={(event) => {c = event.explicitOriginalTarget.textContent}}/>
+    <Box {mark} on:newMark={changes} on:valor={(event) => {a = event.detail.target.innerHTML}}/>
+    <Box {mark} on:newMark={changes} on:valor={(event) => {b = event.detail.target.innerHTML}}/>
+    <Box {mark} on:newMark={changes} on:valor={(event) => {c = event.detail.target.innerHTML}}/>
   </div>
   <div>
-    <Box {mark} on:newMark={changes} on:valor={(event) => {d = event.explicitOriginalTarget.textContent}}/>
-    <Box {mark} on:newMark={changes} on:valor={(event) => {e = event.explicitOriginalTarget.textContent}}/>
-    <Box {mark} on:newMark={changes} on:valor={(event) => {f = event.explicitOriginalTarget.textContent}}/>
+    <Box {mark} on:newMark={changes} on:valor={(event) => {d = event.detail.target.innerHTML}}/>
+    <Box {mark} on:newMark={changes} on:valor={(event) => {e = event.detail.target.innerHTML}}/>
+    <Box {mark} on:newMark={changes} on:valor={(event) => {f = event.detail.target.innerHTML}}/>
   </div>
   <div>
-    <Box {mark} on:newMark={changes} on:valor={(event) => {g = event.explicitOriginalTarget.textContent}}/>
-    <Box {mark} on:newMark={changes} on:valor={(event) => {h = event.explicitOriginalTarget.textContent}}/>
-    <Box {mark} on:newMark={changes} on:valor={(event) => {i = event.explicitOriginalTarget.textContent}}/>
+    <Box {mark} on:newMark={changes} on:valor={(event) => {g = event.detail.target.innerHTML}}/>
+    <Box {mark} on:newMark={changes} on:valor={(event) => {h = event.detail.target.innerHTML}}/>
+    <Box {mark} on:newMark={changes} on:valor={(event) => {i = event.detail.target.innerHTML}}/>
   </div> 
   </div>
   <div class="d-flex justify-content-evenly">

@@ -33,15 +33,27 @@
 
 </script>
 
-<main>
-  <div class="container">
+<main class="position-relative">
+  <div class="position-absolute top-50 start-50 translate-middle">
     
     {#if winner}
-      <p class="ganador">El ganador es {winner}</p>
+
+   <div class="alert alert-success" role="alert"><h2>El ganador es {winner}</h2>
+  
+</div>
+
+
+
+
     {:else if a && b && c && d && e && f && g && h && i}
-      <p class="tablas">Tablas, no hay ganador 😐</p>
+      <div class="alert alert-dark" role="alert"> <h2>Tablas, no hay ganador 😐</h2>
+  
+</div>
     {:else}
-      <p class="turno">Es el turno de {mark}</p>
+      <div class="alert alert-light" role="alert"> <h2>Es el turno de {mark}</h2>
+        
+</div>
+
     {/if}
       
 
@@ -62,7 +74,7 @@
     <Box {mark} on:newMark={changes} on:valor={(event) => {i = event.explicitOriginalTarget.textContent}}/>
   </div> 
   </div>
-  <div class="boton">
+  <div class="d-flex justify-content-evenly">
     <ButtonReset />
   </div>
 </div>
@@ -78,32 +90,6 @@ main {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-}
-
-.ganador {
-  color: green;
-  font-size: 2.5rem;
-}
-.tablas {
-  color: darkslategray;
-  font-size: 2.5rem;
-}
-.turno {
-  color: black;
-  font-size: 2.5rem;
-}
-
-.boton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.container {
-  /* border: 1px solid black; */
-  box-sizing: border-box;
-
 }
 
 .game {

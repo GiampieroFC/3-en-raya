@@ -23,12 +23,12 @@
 
 <style>
   div {
-    font-size: 3.5rem;
+    /* font-size: 3.5rem; */
     width: 5rem;
     height: 5rem;
-    border: 1px solid whitesmoke;
+    /* border: 1px solid whitesmoke;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
 </style>
